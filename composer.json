@@ -1,0 +1,32 @@
+{
+    "name": "ErNine/dcat_admin_member",
+    "alias": "用户管理",
+    "description": "基于 dcat-admin实现用户管理功能，含登录鉴权接口等。",
+    "type": "library",
+    "keywords": ["dcat-admin", "ErNine", "member", "用户管理扩展", ""],
+    "homepage": "https://github.com/ErNine/dcat_admin_member",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ErNine",
+            "email": "itfengfanzhe@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ErNine/DcatAdminMember\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "ErNine/DcatAdminMember\\DcatAdminMemberServiceProvider",
+        "laravel": {
+            "providers": [
+                "ErNine/DcatAdminMember\\DcatAdminMemberServiceProvider"
+            ]
+        }
+    }
+}
